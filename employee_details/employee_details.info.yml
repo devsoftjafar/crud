@@ -1,0 +1,5 @@
+name: employee_details
+description:  Employee Details custom module is compatible for drupal 8 and 9.
+type: module
+package: custom
+core_version_requirement: ^8 || ^9

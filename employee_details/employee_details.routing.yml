@@ -1,0 +1,36 @@
+# Employee Registration FormRoute
+employee_details.register:
+  path: '/employee/register'
+  defaults:
+    _title: 'Employee Registration Form'
+    _form: '\Drupal\employee_details\Form\EmployeeRegisterForm'
+  requirements:
+    _permission: 'access content'
+# Update Employee RecordsRoute
+employee_details.update:
+  path: '/employee/{id}/update'
+  defaults:
+    _title: 'Update Employee Records'
+    _form: '\Drupal\employee_details\Form\EmployeeUpdateForm'
+  requirements:
+    _permission: 'access content'
+# Delete Employee RecordsRoute
+employee_details.delete:
+  path: '/employee/{id}/delete'
+  defaults:
+    _title: 'Delete Employee Records'
+    _form: '\Drupal\employee_details\Form\EmployeeDeleteForm'
+  requirements:
+    _permission: 'access content'
+# Show Employee DetailsRoute
+employee_details.employeepanel:
+  path: '/show/employee'
+  defaults:
+    _controller: '\Drupal\employee_details\Controller\EmployeePanelController::index'
+    _title: 'Show Employee Details' 
+  requirements:
+    _permission: 'access content'
+
+
+
+
